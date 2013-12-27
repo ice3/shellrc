@@ -3,10 +3,10 @@
 # first to take advantage of user additions. use internal bash
 # globbing instead of external grep binary.
 
-# enable colors for ls, etc. prefer ~/.dir_colors
+# enable colors for ls, etc. prefer $HOME/.dir_colors
 if [ -x /usr/bin/dircolors ]; then
-  if [[ -f ~/.dir_colors ]]; then
-    eval $(dircolors -b ~/.dir_colors)
+  if [[ -f $HOME/.dir_colors ]]; then
+    eval $(dircolors -b $HOME/.dir_colors)
   elif [[ -f /etc/DIR_COLORS ]]; then
     eval $(dircolors -b /etc/DIR_COLORS)
   fi

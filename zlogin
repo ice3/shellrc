@@ -1,6 +1,6 @@
 # load all files from .shell/login.d directory
-if [ -d ~/.shellrc/login.d ]; then
-  for file in ~/.shellrc/login.d/*.sh; do
+if [ -d $HOME/.shellrc/login.d ]; then
+  for file in $HOME/.shellrc/login.d/*.sh; do
     source $file
   done
 fi
