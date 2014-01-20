@@ -12,12 +12,15 @@ if [ -x /usr/bin/dircolors ]; then
   fi
 fi
 
-# enable --color switch for commands, if supported
-for cmd in ls grep fgrep egrep; do
-  if $cmd --color=auto &> /dev/null; then
-    alias $cmd="$cmd --color=auto"
-  fi
+# enable --color switch for grep commands
+for cmd in grep fgrep egrep; do
+  alias $cmd="$cmd --color=auto"
 done
+
+# enable --color switch for ls command, if supported
+if ls --color=auto &> /dev/null; then
+  alias ls="ls --color=auto"
+fi
 
 # macos ls doesn't support ls --color, but uses CLICOLOR environment variable
 export CLICOLOR=1
