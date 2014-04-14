@@ -3,9 +3,9 @@
 # first to take advantage of user additions. use internal bash
 # globbing instead of external grep binary.
 
-# Make sure coreutils are loaded before this file
-if [ -f $HOME/.shellrc/rc.d/coreutils.sh ]; then
-  . $HOME/.shellrc/rc.d/coreutils.sh
+# Make sure to use GNU versions of utilities are loaded before this file
+if [ -f $HOME/.shellrc/rc.d/gnuutils.sh ]; then
+  . $HOME/.shellrc/rc.d/gnuutils.sh
 fi
 
 # enable colors for ls, etc. prefer $HOME/.dir_colors
