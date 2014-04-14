@@ -3,8 +3,13 @@
 # first to take advantage of user additions. use internal bash
 # globbing instead of external grep binary.
 
+# Make sure coreutils are loaded before this file
+if [ -f $HOME/.shellrc/rc.d/coreutils.sh ]; then
+  . $HOME/.shellrc/rc.d/coreutils.sh
+fi
+
 # enable colors for ls, etc. prefer $HOME/.dir_colors
-if [ -x /usr/bin/dircolors ]; then
+if whence dircolors > /dev/null; then
   if [[ -f $HOME/.dir_colors ]]; then
     eval $(dircolors -b $HOME/.dir_colors)
   elif [[ -f /etc/DIR_COLORS ]]; then
