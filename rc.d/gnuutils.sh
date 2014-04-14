@@ -5,6 +5,6 @@ if [ -d /usr/local/opt/coreutils/libexec ]; then
 fi
 
 # Use gfind if available
-if whence gfind > /dev/null; then
+if which gfind > /dev/null; then
   alias find='gfind'
 fi
