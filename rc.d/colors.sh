@@ -31,11 +31,11 @@ unset match_lhs
 
 # define prompt colors shell-independently
 if [[ -n ${ZSH_VERSION-} ]]; then
-  c_red="%{$fg[red]%}"
-  c_green="%{$fg[green]%}"
-  c_yellow="%{$fg[yellow]%}"
-  c_blue="%{$fg[blue]%}"
-  c_clear="%{$reset_color%}"
+  c_red="%F{160}"
+  c_green="%F{61}"
+  c_yellow="%F{136}"
+  c_blue="%F{33}"
+  c_clear="%F{reset}"
 else
   # Using \[ and \] around colors is necessary to prevent
   # issues with command line editing/browsing/completion!
