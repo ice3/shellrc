@@ -37,7 +37,7 @@ unset match_lhs
 # define prompt colors shell-independently
 if [[ -n ${ZSH_VERSION-} ]]; then
   c_red="%F{160}"
-  c_green="%F{61}"
+  c_green="%F{64}"
   c_yellow="%F{136}"
   c_blue="%F{33}"
   c_clear="%F{reset}"
