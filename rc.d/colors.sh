@@ -44,9 +44,9 @@ if [[ -n ${ZSH_VERSION-} ]]; then
 else
   # Using \[ and \] around colors is necessary to prevent
   # issues with command line editing/browsing/completion!
-  c_red=$'\e[00;31m'
-  c_green=$'\e[00;32m'
-  c_yellow=$'\e[00;33m'
-  c_blue=$'\e[00;34m'
-  c_clear=$'\e[00;00m'
+  c_red=$'\033[38;5;160m'
+  c_green=$'\033[38;5;64m'
+  c_yellow=$'\033[38;5;136m'
+  c_blue=$'\033[38;5;33m'
+  c_clear=$'\033[0;00m'
 fi
