@@ -10,7 +10,7 @@ case ${TERM} in
     }
 
     if [ -n "$ZSH_VERSION" ]; then
-      # there's no HOSTNAME variable on zsh
+      # There's no HOSTNAME variable on zsh
       HOSTNAME=$(hostname)
 
       function precmd() {
@@ -19,14 +19,17 @@ case ${TERM} in
       }
 
       function preexec() {
-        echo -ne "\033]0;${HOSTNAME%%.*} | $(basename $PWD) | $1\007"
-        set_tmux_title "${HOSTNAME%%.*} | $(basename $PWD) | $1"
+        # Strip argument list from command
+        PROGRAM=$(echo $1 |cut -f1 -d' ')
+
+        echo -ne "\033]0;${HOSTNAME%%.*} | $PROGRAM\007"
+        set_tmux_title "${HOSTNAME%%.*} | $PROGRAM"
       }
     fi
 
     if [ -n "$BASH" ]; then
-      PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*} | $(basename $PWD)\007"'
-      set_tmux_title "${HOSTNAME%%.*} | $(basename $PWD)"
+      PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*}\007"'
+      set_tmux_title "${HOSTNAME%%.*}"
     fi
   ;;
 esac
