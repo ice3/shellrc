@@ -10,3 +10,6 @@ alias vi='vim'
 if which colordiff &> /dev/null; then
   alias diff='colordiff'
 fi
+
+# hexdump using od
+alias hd='od -Ax -tx1z -v'
