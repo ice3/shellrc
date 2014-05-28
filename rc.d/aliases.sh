@@ -20,3 +20,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
 elif [[ "$(uname)" == "Linux" ]]; then
   alias psc='ps -xawfeo pid,user,cgroup,args'
 fi
+
+# alias for using rsync with sudo and ssh
+alias rrsync='rsync --rsync-path sudo\ rsync -avze ssh'
