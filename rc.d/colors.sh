@@ -9,7 +9,7 @@ if [ -f $HOME/.shellrc/rc.d/gnuutils.sh ]; then
 fi
 
 # enable colors for ls, etc. prefer $HOME/.dir_colors
-if which dircolors > /dev/null; then
+if which dircolors &> /dev/null; then
   if [[ -f $HOME/.dir_colors ]]; then
     eval $(dircolors -b $HOME/.dir_colors)
   elif [[ -f /etc/DIR_COLORS ]]; then
