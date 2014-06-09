@@ -7,6 +7,9 @@ setopt prompt_subst
 # use a menu for auto-completion
 zstyle ':completion:*:*:*:*:*' menu select
 
+# enable menu descriptions (bold)
+zstyle ":completion:*:descriptions" format "%B%d%b"
+
 # use cache for auto-completion
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path $ZSH/cache/
