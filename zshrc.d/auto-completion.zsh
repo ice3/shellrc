@@ -1,3 +1,6 @@
+# enable custom autocompletion
+fpath=(~/.shellrc/zshrc.d/completion $fpath)
+
 # enable the famous zsh tab-completion system
 autoload -Uz compinit && compinit -i
 
