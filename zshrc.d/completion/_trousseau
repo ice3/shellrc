@@ -4,8 +4,8 @@ _trousseau() {
   local curcontext="$curcontext" state line
   typeset -A opt_args
 
-  _arguments '1: :->trousseaucmd'
-  _arguments '2: :->trousseausubcmd'
+  _arguments '1: :->trousseaucmd' \
+             '2: :->trousseausubcmd'
 
   case $state in
     trousseaucmd)
@@ -19,7 +19,15 @@ _trousseau() {
           keys=("${(@f)$(trousseau keys)}")
           compadd -a "$@" -- keys
         ;;
+        *)
+          # Fallback to standard filename completion
+          compadd - *
+        ;;
       esac
+    ;;
+    *)
+      # Fallback to standard filename completion
+      compadd - *
     ;;
   esac
 }
