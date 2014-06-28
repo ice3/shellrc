@@ -12,7 +12,7 @@ _trousseau() {
             ;;
         2)
             case ${prev} in
-                get|set|del)
+                get|set|del|export)
                     local keys=$(trousseau keys)
                     COMPREPLY=($(compgen -W "${keys[*]}" ${cur}))
                     ;;

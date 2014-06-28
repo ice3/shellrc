@@ -14,7 +14,7 @@ _trousseau() {
     ;;
     trousseausubcmd)
       case $words[2] in
-        (get|set|del)
+        (get|set|del|export)
           # Retrieve get/set autocomplete from "trousseau keys"
           keys=("${(@f)$(trousseau keys)}")
           compadd -a "$@" -- keys
