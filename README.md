@@ -1,5 +1,18 @@
 # My shell dotfiles.
 
+TODO :
+ * régler les bashrc et zshrc
+   * regarder les plugins pour zsh
+ * rajouter oh-my-zsh (vraiment un interet ?)
+ * rajouter les exports pour arduino-mk
+ * rajouter les plugins pour vim
+   * faire le tri des extensions pour vim
+ * rajouter une config pour byobu
+ * rajouter les extensions de sublime text (http://zanshin.net/2012/08/03/adding-sublime-text-2-settings-themes-plugins-to-dotfiles/)
+   * faire le tri des extensions st
+
+ * rajouter ?
+
 ## Features
 
 * `~/.shellrc/rc.d` as an include.d style directory for scripts used by all shells
