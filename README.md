@@ -33,4 +33,16 @@ ln -sf .shellrc/dotfiles/inputrc .inputrc
 # zsh config
 ln -sf .shellrc/dotfiles/zshrc .zshrc
 ln -sf .shellrc/dotfiles/zlogin .zlogin
+
+#git
+ln -sf .shellrc/dotfiles/gitignore .gitigrore
+```
+
+or
+
+```sh
+for file in ~/.shellrc/dotfiles/*
+do
+  ln -sf "$file" $HOME/.`basename "$file"`
+done
 ```
