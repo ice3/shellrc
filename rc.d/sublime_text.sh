@@ -2,9 +2,9 @@
 #Send annoying .output logs to /dev/null
 function sblm
 {
-  for path in "$@"
+  for f_path in "$@"
   do
-    nohup sublime "$path" >/dev/null 2>&1 &
+    nohup sublime "$f_path" >/dev/null 2>&1 &
   done
 }
 

@@ -1,10 +1,6 @@
 # My shell dotfiles.
 
 TODO :
- * régler les bashrc et zshrc
-   * regarder les plugins pour zsh
- * rajouter oh-my-zsh (vraiment un interet ?)
- * rajouter les exports pour arduino-mk
  * rajouter les plugins pour vim
    * faire le tri des extensions pour vim
  * rajouter une config pour byobu
@@ -30,11 +26,11 @@ cd
 git clone git://github.com/chr4/shellrc.git .shellrc
 
 # bash config
-ln -sf .shellrc/bashrc .bashrc
-ln -sf .shellrc/bash_profile .bash_profile
-ln -sf .shellrc/inputrc .inputrc
+ln -sf .shellrc/dotfiles/bashrc .bashrc
+ln -sf .shellrc/dotfiles/bash_profile .bash_profile
+ln -sf .shellrc/dotfiles/inputrc .inputrc
 
 # zsh config
-ln -sf .shellrc/zshrc .zshrc
-ln -sf .shellrc/zlogin .zlogin
+ln -sf .shellrc/dotfiles/zshrc .zshrc
+ln -sf .shellrc/dotfiles/zlogin .zlogin
 ```

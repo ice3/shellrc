@@ -36,3 +36,13 @@ serve() {
   local port=${1:-8000}
   python -m SimpleHTTPServer ${port}
 }
+
+# know which package installed a file
+# doesn't work for builtin, print a lot of junk
+installed_by_packet() {
+  type "$1" && \
+  printf "installed by : " && dpkg -S $(which "$1")
+}
+
+# Get week number
+alias week='date +%V'

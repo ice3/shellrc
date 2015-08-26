@@ -11,6 +11,16 @@ ZSH_THEME="crunch"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git common-aliases compleat debian dircycle encode64 jsontools pip pyenv python)
+
+plugins=(compleat dircycle pip pyenv sudo supervisor command-not-found vagrant)
+# complete, pip, pyenv, supervisor, vagrant : completion
+# dircycle : on peut passer d'un dossier à un ancien avec Ctrl-Maj-gauche/droite
+# sudo : esc 2 fois pour rajouter sudo
+# command-not-found : propose des commandes proches si non trouvées
+#
+
+rajouter
+ * encode64/decode
+ * urltools (urlencode / urldecode)
 
 source $ZSH/oh-my-zsh.sh
