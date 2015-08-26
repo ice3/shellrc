@@ -15,11 +15,20 @@ TODO :
 * `~/.shellrc/bashrc.d` as an include.d style directory for bashrc scripts
 * `~/.shellrc/zsh.d` as an include.d style directory for zshrc scripts
 * `~/.shellrc/login.d` as an include.d style directory for shared zlogin/bash\_profile scripts
-* git repository information (current branch, current status) without external dependencies
-* colorful prompt
-* shared history for all shells
 
 ## Installation
+
+### Configuration files for bash:
+
+* bashrc
+* bash_profile
+* input_rc
+
+### Configuration files for zsh:
+
+* zshrc
+* zlogin
+
 
 ```bash
 cd
@@ -33,9 +42,6 @@ ln -sf .shellrc/dotfiles/inputrc .inputrc
 # zsh config
 ln -sf .shellrc/dotfiles/zshrc .zshrc
 ln -sf .shellrc/dotfiles/zlogin .zlogin
-
-#git
-ln -sf .shellrc/dotfiles/gitignore .gitigrore
 ```
 
 or
@@ -45,4 +51,10 @@ for file in ~/.shellrc/dotfiles/*
 do
   ln -sf "$file" $HOME/.`basename "$file"`
 done
+
+#git
+ln -sf .shellrc/dotfiles/gitignore .gitigrore
+
+#byobu
+ln -sf .shellrc/dotfiles/byobu .byobu
 ```
