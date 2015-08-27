@@ -1,2 +1,18 @@
 [
+	// live preview for align tab
+	{
+   "keys": ["super+shift+a"], "command": "align_tab",
+   "args" : {"live_preview" : true}
+   },
+
+ 	// reindent selection
+ 	{
+    "keys": ["super+alt+l"], "command": "reindent"
+  },
+
+    // Copy file name
+  {
+    "keys": ["ctrl+shift+c"],
+    "command": "copy_path_to_clipboard"
+  }
 ]

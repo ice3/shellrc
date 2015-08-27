@@ -19,8 +19,4 @@ plugins=(compleat dircycle pip pyenv sudo supervisor command-not-found vagrant)
 # command-not-found : propose des commandes proches si non trouvées
 #
 
-rajouter
- * encode64/decode
- * urltools (urlencode / urldecode)
-
 source $ZSH/oh-my-zsh.sh

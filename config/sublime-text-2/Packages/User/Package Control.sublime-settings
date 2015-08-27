@@ -4,10 +4,21 @@
 	],
 	"installed_packages":
 	[
+		"AlignTab",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"HTML Boilerplate",
+		"HTML-CSS-JS Prettify",
+		"Inc-Dec-Value",
+		"JavaScript Patterns",
 		"LiveReload",
 		"Markdown Preview",
 		"Package Control",
 		"Pretty YAML",
+		"SortBy",
 		"TrailingSpaces"
 	]
 }
