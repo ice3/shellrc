@@ -1,1 +1,4 @@
 dotfiles/byobu/.ssh-agent
+
+# python compliled files
+*.pyc
