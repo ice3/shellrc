@@ -2,3 +2,8 @@ dotfiles/byobu/.ssh-agent
 
 # python compliled files
 *.pyc
+
+# st package control
+config/sublime-text-2/Packages/User/Package Control.cache
+config/sublime-text-2/Packages/User/Package Control.last-run
+config/sublime-text-2/Packages/User/Color Highlighter
