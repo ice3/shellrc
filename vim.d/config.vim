@@ -107,3 +107,5 @@ imap jj <ESC>     " quick escape
 
 nmap <leader>w :w!<cr>                " Fast saving
 cmap w!! w !sudo tee % >/dev/null     " Let me save files with sudo
+
+nnoremap <leader>u :GundoToggle<CR> " toggle gundo
