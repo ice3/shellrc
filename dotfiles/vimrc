@@ -1,0 +1,67 @@
+" Necesary  for lots of cool vim things
+set nocompatible
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => tabulation management
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Attempt to determine the type of a file based on its name and possibly its
+" contents. Use this to allow intelligent auto-indenting for each filetype,
+" and for plugins that are filetype specific.
+filetype indent plugin on
+
+set autoindent      " Who doesn't like autoindent?
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set expandtab       " tabs are spaces
+set smarttab        " delete all spaces forming a tab in once
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ViM user interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+syntax on                   " Enable syntax highlighting
+set number                  " show line numbers
+set showcmd                 " show command in bottom bar
+set cursorline              " highlight current line
+set wildmenu                " visual autocomplete for command menu
+set wildignore=*.o,*~,*.pyc " Ignore compiled files
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => search
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+nnoremap <leader><space> :nohlsearch<CR>    " turn off search highlight
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => leader redefine
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let mapleader=","       " leader is comma
+let g:mapleader = ","
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => misc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Automatically cd into the directory that the file is in
+autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
+
+set autoread      " Set to auto read when a file is changed from the outside
+imap jj <ESC>     " quick escape
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => save
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nmap <leader>w :w!<cr>                " Fast saving
+cmap w!! w !sudo tee % >/dev/null     " Let me save files with sudo
