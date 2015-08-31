@@ -31,6 +31,7 @@ let g:airline_theme           = 'solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'sjl/gundo.vim'
+Plugin 'fisadev/FixedTaskList.vim'
 
 let g:ctrlp_match_window = 'bottom,rder:ttb'
 let g:ctrlp_switch_buffer = 0
@@ -43,11 +44,19 @@ nnoremap <leader>u :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""
 "Languages
 """"""""""""""""""""""""""""""""""
-Plugin 'mattn/emmet-vim'            "html fast coding
-Plugin 'scrooloose/nerdcommenter'   " <leader>cc to comment and <leader>cu to uncomment
-Plugin 'Raimondi/delimitMate'       "closes the ( { ' etc
-Plugin 'majutsushi/tagbar'          "ctags navigation bar
-Plugin 'scrooloose/syntastic'       "syntax checker
+Plugin 'mattn/emmet-vim'                 "html fast coding
+Plugin 'scrooloose/nerdcommenter'        " <leader>cc to comment and <leader>cu to uncomment
+Plugin 'Raimondi/delimitMate'            "closes the ( { ' etc
+Plugin 'majutsushi/tagbar'               "ctags navigation bar
+Plugin 'scrooloose/syntastic'            "syntax checker
+Plugin 'klen/python-mode'
+Plugin 'Shougo/neocomplcache.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'fisadev/vim-isort'
+
 nmap <C-t> :TagbarToggle<CR>
 
 
