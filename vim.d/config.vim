@@ -1,6 +1,19 @@
 " Necesary  for lots of cool vim things
 set nocompatible
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Byobu escape char
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" terminal insert special characters when ctrl-arrow is pressed
+" We find them in insert mode : Ctrl-V and Ctrl-arrow
+" ^[ is the ESC character
+
+"byobu
+map <ESC>[D <C-left>
+map <ESC>[C <C-right>
+map <ESC>[A <C-up>
+map <ESC>[B <C-down> 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => tabulation management
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -24,7 +37,7 @@ set smarttab        " delete all spaces forming a tab in once
 syntax on                   " Enable syntax highlighting
 set number                  " show line numbers
 set showcmd                 " show command in bottom bar
-" set cursorline              " highlight current line
+set cursorline              " highlight current line
 set wildmenu                " visual autocomplete for command menu
 set wildignore=*.o,*~,*.pyc " Ignore compiled files
 " Don't redraw while executing macros (good performance config)
@@ -59,10 +72,10 @@ map j gj
 map k gk
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+noremap <C-l> <c-w>l
+noremap <C-h> <c-w>h
+noremap <C-k> <c-w>k
+noremap <C-j> <c-w>j
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>
@@ -100,6 +113,16 @@ autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 
 set autoread      " Set to auto read when a file is changed from the outside
 imap jj <ESC>     " quick escape
+nnoremap <leader>sv :source $HOME/.vimrc<CR>
+
+nmap <C-w>  :bd<CR>
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => save
@@ -108,4 +131,3 @@ imap jj <ESC>     " quick escape
 nmap <leader>w :w!<cr>                " Fast saving
 cmap w!! w !sudo tee % >/dev/null     " Let me save files with sudo
 
-nnoremap <leader>u :GundoToggle<CR> " toggle gundo
