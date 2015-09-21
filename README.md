@@ -15,25 +15,27 @@ TODO :
 * `~/.shellrc/bashrc.d` as an include.d style directory for bashrc scripts
 * `~/.shellrc/zsh.d` as an include.d style directory for zshrc scripts
 * `~/.shellrc/login.d` as an include.d style directory for shared zlogin/bash\_profile scripts
+* `~/.shellrc/vim.d` as an include.d style directory for vim scripts
+
 
 ## Installation
 
-### Configuration files for bash:
-
-* bashrc
-* bash_profile
-* input_rc
-
-### Configuration files for zsh:
-
-* zshrc
-* zlogin
-
-
+### Clone the repo
 ```bash
-cd
-git clone git://github.com/chr4/shellrc.git .shellrc
+cd $HOME
+git clone --recursive git://github.com/chr4/shellrc.git .shellrc  # to clone submodules
+```
 
+### Link all the dotfiles at once
+```bash
+for file in ~/.shellrc/dotfiles/*
+do
+  ln -sf "$file" $HOME/.`basename "$file"`
+done
+```
+
+### Or link the dotfiles individually
+```bash
 # bash config
 ln -sf .shellrc/dotfiles/bashrc .bashrc
 ln -sf .shellrc/dotfiles/bash_profile .bash_profile
@@ -42,15 +44,10 @@ ln -sf .shellrc/dotfiles/inputrc .inputrc
 # zsh config
 ln -sf .shellrc/dotfiles/zshrc .zshrc
 ln -sf .shellrc/dotfiles/zlogin .zlogin
-```
 
-or
-
-```sh
-for file in ~/.shellrc/dotfiles/*
-do
-  ln -sf "$file" $HOME/.`basename "$file"`
-done
+#vim
+ln -sf .shellrc/dotfiles/vimrc .vimrc
+ln -sf .shellrc/dotfiles/vim .vim
 
 #git
 ln -sf .shellrc/dotfiles/gitignore .gitigrore
@@ -58,3 +55,37 @@ ln -sf .shellrc/dotfiles/gitignore .gitigrore
 #byobu
 ln -sf .shellrc/dotfiles/byobu .byobu
 ```
+
+
+## Configuration files for bash:
+
+* bashrc
+* bash_profile
+* input_rc
+
+## Configuration files for zsh:
+
+* zshrc
+* zlogin
+
+## Configuration files for vim:
+
+ * vimrc
+ * vim folder (bootstrap bundle/vundle package manager)
+ * vim.d folder
+
+## Configuration files for git:
+
+ * gitconfig
+
+## ST2
+
+ * config/sublime-text-2/Packages/User/
+  * languages settings
+  * keymaps and general settings
+  * package control config
+
+
+
+
+
