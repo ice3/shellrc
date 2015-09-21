@@ -10,3 +10,4 @@ config/sublime-text-2/Packages/User/Color Highlighter/*
 
 # vim
 dotfiles/vim/*
+*.swp
