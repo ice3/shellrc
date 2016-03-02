@@ -88,6 +88,7 @@ ln -sf .shellrc/dotfiles/byobu .byobu
  * vim folder (bootstrap bundle/vundle package manager)
  * vim.d folder
  * in ViM, to install : `<esc>:BundleInstall<enter>`
+ * to install powerline fonts : `cd ~/.shellrc/vim.d/fonts && ./install.sh` then change the font in the terminal (for gnome term : "Edit > Edit Profile > Font"
 
 ## Configuration files for git:
 
