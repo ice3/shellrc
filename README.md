@@ -98,6 +98,12 @@ ln -sf .shellrc/dotfiles/byobu .byobu
   * languages settings
   * keymaps and general settings
   * package control config
+* to install
+
+```shell
+mv $HOME/.shellrc/config/sublime-text-2/Packages/User{,.bak}
+ln -sf $HOME/.shellrc/config/sublime-text-2/Packages/User $HOME/.config/sublime-text-2/Packages/User
+```
 
 
 
