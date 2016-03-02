@@ -100,7 +100,7 @@ ln -sf .shellrc/dotfiles/byobu .byobu
   * package control config
 * to install
 
-```shell
+```bash
 mv $HOME/.shellrc/config/sublime-text-2/Packages/User{,.bak}
 ln -sf $HOME/.shellrc/config/sublime-text-2/Packages/User $HOME/.config/sublime-text-2/Packages/User
 ```
