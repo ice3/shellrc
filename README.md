@@ -20,6 +20,19 @@ TODO :
 
 ## Installation
 
+### Install the apps
+ 
+* vim
+* zsh
+* oh-my-zsh
+* sublime text 2 
+
+```shell
+sudo add-apt-repository ppa:webupd8team/sublime-text-2 && sudo apt-get update
+sudo apt-get install sublime-text vim zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # from https://github.com/robbyrussell/oh-my-zsh
+```
+
 ### Clone the repo
 ```bash
 cd $HOME
@@ -79,9 +92,6 @@ ln -sf .shellrc/dotfiles/byobu .byobu
  * gitconfig
 
 ## ST2
- * installation de sublime text 2 
-  sudo add-apt-repository ppa:webupd8team/sublime-text-2 && sudo apt-get update && sudo apt-get install sublime-text
-
  * config/sublime-text-2/Packages/User/
   * languages settings
   * keymaps and general settings
