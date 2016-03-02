@@ -23,7 +23,7 @@ TODO :
 ### Clone the repo
 ```bash
 cd $HOME
-git clone --recursive git://github.com/chr4/shellrc.git .shellrc  # to clone submodules
+git clone --recursive git://github.com/ice3/shellrc.git .shellrc  # to clone submodules
 ```
 
 ### Link all the dotfiles at once
@@ -79,6 +79,8 @@ ln -sf .shellrc/dotfiles/byobu .byobu
  * gitconfig
 
 ## ST2
+ * installation de sublime text 2 
+  sudo add-apt-repository ppa:webupd8team/sublime-text-2 && sudo apt-get update && sudo apt-get install sublime-text
 
  * config/sublime-text-2/Packages/User/
   * languages settings
