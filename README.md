@@ -30,6 +30,7 @@ TODO :
 ```shell
 sudo add-apt-repository ppa:webupd8team/sublime-text-2 && sudo apt-get update
 sudo apt-get install sublime-text vim zsh
+chsh -s `which zsh` # change zsh to default shell /!\ log out and in to see changes
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # from https://github.com/robbyrussell/oh-my-zsh
 ```
 
