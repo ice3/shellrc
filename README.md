@@ -86,6 +86,7 @@ ln -sf .shellrc/dotfiles/byobu .byobu
  * vimrc
  * vim folder (bootstrap bundle/vundle package manager)
  * vim.d folder
+ * in ViM, to install : `<esc>:BundleInstall<enter>`
 
 ## Configuration files for git:
 
