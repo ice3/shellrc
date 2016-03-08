@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"LiveReload"
 	],
 	"installed_packages":
 	[
@@ -15,8 +16,10 @@
 		"Inc-Dec-Value",
 		"JavaScript Patterns",
 		"LiveReload",
+		"Markdown HTML Preview",
 		"Markdown Preview",
 		"Package Control",
+		"PackageResourceViewer",
 		"Pretty YAML",
 		"SortBy",
 		"TrailingSpaces",

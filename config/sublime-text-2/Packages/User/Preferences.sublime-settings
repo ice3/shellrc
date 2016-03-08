@@ -1,9 +1,10 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"detect_indentation": true,
-	"font_size": 10,
+	"font_size": 14,
 	"ignored_packages":
 	[
+		"LiveReload",
 		"Vintage"
 	],
 	"tab_size": 2,
