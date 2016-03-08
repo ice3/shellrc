@@ -8,6 +8,7 @@
 	dump = cat-file -p
 	l = log --oneline
 	lg = log --oneline --graph --decorate
+  ld = log --graph --decorate --pretty=medium --abbrev-commit --all
 	contributors = shortlog --summary --numbered
 
 [user]
@@ -29,3 +30,5 @@
 [color "status"]
 	changed = blue bold
 	untracked = magenta bold
+[push]
+	default = simple
