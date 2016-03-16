@@ -9,6 +9,7 @@ call vundle#rc()
 """""""""""""""""""""""""
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 "terminal and colorscheme settings
 syntax enable
@@ -54,6 +55,7 @@ Plugin 'Shougo/neocomplcache.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'garbas/vim-snipmate'
 Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
 
 nmap <C-t> :TagbarToggle<CR>
 
