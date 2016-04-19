@@ -33,6 +33,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'fisadev/FixedTaskList.vim'
+Plugin 'ConradIrwin/vim-bracketed-paste'
 
 let g:ctrlp_match_window = 'bottom,rder:ttb'
 let g:ctrlp_switch_buffer = 0

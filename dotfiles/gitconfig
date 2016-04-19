@@ -32,3 +32,5 @@
 	untracked = magenta bold
 [push]
 	default = simple
+[pull]
+	rebase = true

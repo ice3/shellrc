@@ -67,3 +67,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # json pretty-print
  alias json_nice="python -m json.tool"
+
+# Get week number
+alias week='date +%V'

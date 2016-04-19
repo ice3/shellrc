@@ -44,5 +44,7 @@ installed_by_packet() {
   printf "installed by : " && dpkg -S $(which "$1")
 }
 
-# Get week number
-alias week='date +%V'
+# meteo
+meteo() {
+  curl wttr.in/$1
+}
