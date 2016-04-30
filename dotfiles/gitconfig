@@ -7,9 +7,9 @@
 	type = cat-file -t
 	dump = cat-file -p
 	l = log --oneline
-	lg = log --oneline --graph --decorate
-  ld = log --graph --decorate --pretty=medium --abbrev-commit --all
-	contributors = shortlog --summary --numbered
+  lola = log --graph --decorate --pretty=medium --abbrev-commit --all
+  lol = log --graph --decorate --pretty=medium --abbrev-commit
+  contributors = shortlog --summary --numbered
 
 [user]
 	name = Matthieu Falce
