@@ -3,4 +3,4 @@
 	url = https://github.com/gmarik/vundle.git
 [submodule "vim.d/fonts"]
 	path = vim.d/fonts
-	url = git@github.com:powerline/fonts.git
+	url = https://github.com/powerline/fonts.git
