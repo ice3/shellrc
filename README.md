@@ -65,6 +65,7 @@ ln -sf .shellrc/dotfiles/vim .vim
 
 #git
 ln -sf .shellrc/dotfiles/gitignore .gitigrore
+ln -sf .shellrc/dotfiles/gitconfig .gitconfig
 
 #byobu
 ln -sf .shellrc/dotfiles/byobu .byobu
