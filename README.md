@@ -95,8 +95,8 @@ ln -sf .shellrc/dotfiles/byobu .byobu
 
  * gitconfig
 
-## ST2
- * config/sublime-text-2/Packages/User/
+## ST2 / ST3
+ * config/sublime-text-{2, 3}/Packages/User/
   * languages settings
   * keymaps and general settings
   * package control config
@@ -105,6 +105,9 @@ ln -sf .shellrc/dotfiles/byobu .byobu
 ```bash
 mv $HOME/.shellrc/config/sublime-text-2/Packages/User{,.bak}
 ln -sf $HOME/.shellrc/config/sublime-text-2/Packages/User $HOME/.config/sublime-text-2/Packages/User
+##############
+mv $HOME/.shellrc/config/sublime-text-3/Packages/User{,.bak}
+ln -sf $HOME/.shellrc/config/sublime-text-3/Packages/User $HOME/.config/sublime-text-3/Packages/User
 ```
 
 
