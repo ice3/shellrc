@@ -48,3 +48,7 @@ installed_by_packet() {
 meteo() {
   curl wttr.in/$1
 }
+
+france_inter(){
+  mplayer -cache 4096 -cache-min ${1:-10} http://aifae8cah8.lb.vip.cdn.dvmr.fr/franceinter-midfi.mp3
+}
