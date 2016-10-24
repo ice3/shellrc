@@ -7,6 +7,7 @@
 	"installed_packages":
 	[
 		"AlignTab",
+		"Ansible",
 		"BracketHighlighter",
 		"Emmet",
 		"Git",
@@ -18,11 +19,15 @@
 		"LiveReload",
 		"Markdown HTML Preview",
 		"Markdown Preview",
+		"nginx",
 		"Package Control",
 		"PackageResourceViewer",
+		"Pretty JSON",
 		"Pretty YAML",
+		"Python Flake8 Lint",
 		"SortBy",
 		"SublimeCodeIntel",
+		"Text Pastry",
 		"TrailingSpaces",
 		"Wrap Plus"
 	]
