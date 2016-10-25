@@ -69,6 +69,10 @@ ln -sf .shellrc/dotfiles/gitconfig .gitconfig
 
 #byobu
 ln -sf .shellrc/dotfiles/byobu .byobu
+
+# .config files
+ln -sf .shellrc/config/flake8 $HOME/.config/flake8
+ln -sf .shellrc/config/redshift.conf $HOME/.config/redshift.conf
 ```
 
 
