@@ -1,3 +1,4 @@
 [flake8]
-ignore = I100
+ignore = I100,D105
 max-line-length = 100
+max-complexity = 10
