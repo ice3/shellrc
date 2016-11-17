@@ -4,3 +4,6 @@
 [submodule "vim.d/fonts"]
 	path = vim.d/fonts
 	url = https://github.com/powerline/fonts.git
+[submodule "utils/distribution"]
+	path = utils/distribution
+	url = https://github.com/philovivero/distribution

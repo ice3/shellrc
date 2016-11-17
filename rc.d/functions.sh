@@ -52,3 +52,8 @@ meteo() {
 france_inter(){
   mplayer -cache 4096 -cache-min ${1:-10} http://aifae8cah8.lb.vip.cdn.dvmr.fr/franceinter-midfi.mp3
 }
+
+# distributions of line in given files
+distrib_lines(){
+  wc -l "$@" | grep -v wc | grep -v total | distribution -g -c=pl
+}

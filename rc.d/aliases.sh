@@ -70,3 +70,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Get week number
 alias week='date +%V'
+
+# distribution plotting stuff
+alias distribution='python ~/.shellrc/utils/distribution/distribution.py'
+
