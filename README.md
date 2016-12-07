@@ -21,11 +21,11 @@ TODO :
 ## Installation
 
 ### Install the apps
- 
+
 * vim
 * zsh
 * oh-my-zsh
-* sublime text 2 
+* sublime text 2
 
 ```shell
 sudo add-apt-repository ppa:webupd8team/sublime-text-2 && sudo apt-get update
@@ -64,7 +64,7 @@ ln -sf .shellrc/dotfiles/vimrc .vimrc
 ln -sf .shellrc/dotfiles/vim .vim
 
 #git
-ln -sf .shellrc/dotfiles/gitignore .gitigrore
+ln -sf .shellrc/dotfiles/gitignore .gitignore
 ln -sf .shellrc/dotfiles/gitconfig .gitconfig
 
 #byobu
