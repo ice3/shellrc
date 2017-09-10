@@ -16,7 +16,7 @@ TODO :
 * `~/.shellrc/zsh.d` as an include.d style directory for zshrc scripts
 * `~/.shellrc/login.d` as an include.d style directory for shared zlogin/bash\_profile scripts
 * `~/.shellrc/vim.d` as an include.d style directory for vim scripts
-
+* `~/.shellrc/oh-my-zsh` as an include.d style directory for `oh my zsh` extensions (themes...)
 
 ## Installation
 
