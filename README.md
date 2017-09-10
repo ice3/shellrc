@@ -16,7 +16,6 @@ TODO :
 * `~/.shellrc/zsh.d` as an include.d style directory for zshrc scripts
 * `~/.shellrc/login.d` as an include.d style directory for shared zlogin/bash\_profile scripts
 * `~/.shellrc/vim.d` as an include.d style directory for vim scripts
-* `~/.shellrc/oh-my-zsh` as an include.d style directory for `oh my zsh` extensions (themes...)
 
 ## Installation
 
@@ -51,28 +50,29 @@ done
 ### Or link the dotfiles individually
 ```bash
 # bash config
-ln -sf .shellrc/dotfiles/bashrc .bashrc
-ln -sf .shellrc/dotfiles/bash_profile .bash_profile
-ln -sf .shellrc/dotfiles/inputrc .inputrc
+ln -sf ~/.shellrc/dotfiles/bashrc .bashrc
+ln -sf ~/.shellrc/dotfiles/bash_profile .bash_profile
+ln -sf ~/.shellrc/dotfiles/inputrc .inputrc
 
 # zsh config
-ln -sf .shellrc/dotfiles/zshrc .zshrc
-ln -sf .shellrc/dotfiles/zlogin .zlogin
+ln -sf ~/.shellrc/dotfiles/zshrc .zshrc
+ln -sf ~/.shellrc/dotfiles/zlogin .zlogin
+ln -sf ~/.shellrc/dotfiles/oh-my-zsh/themes/crunch_hostname.zsh-theme .oh-my-zsh/themes/crunch_hostname.zsh-theme
 
 #vim
-ln -sf .shellrc/dotfiles/vimrc .vimrc
-ln -sf .shellrc/dotfiles/vim .vim
+ln -sf ~/.shellrc/dotfiles/vimrc .vimrc
+ln -sf ~/.shellrc/dotfiles/vim .vim
 
 #git
-ln -sf .shellrc/dotfiles/gitignore .gitignore
-ln -sf .shellrc/dotfiles/gitconfig .gitconfig
+ln -sf ~/.shellrc/dotfiles/gitignore .gitignore
+ln -sf ~/.shellrc/dotfiles/gitconfig .gitconfig
 
 #byobu
-ln -sf .shellrc/dotfiles/byobu .byobu
+ln -sf ~/.shellrc/dotfiles/byobu .byobu
 
 # .config files
-ln -sf .shellrc/config/flake8 $HOME/.config/flake8
-ln -sf .shellrc/config/redshift.conf $HOME/.config/redshift.conf
+ln -sf ~/.shellrc/config/flake8 $HOME/.config/flake8
+ln -sf ~/.shellrc/config/redshift.conf $HOME/.config/redshift.conf
 ```
 
 
