@@ -34,7 +34,17 @@ pskill() {
 # Serve current directory with Python's simple HTTP server
 serve() {
   local port=${1:-8000}
-  python -m SimpleHTTPServer ${port}
+
+  case "$(python --version 2>&1)" in
+      *" 3."*)
+          python -m http.server ${port}
+          ;;
+      *)
+          python -m SimpleHTTPServer ${port}
+          ;;
+  esac
+
+  
 }
 
 # know which package installed a file
