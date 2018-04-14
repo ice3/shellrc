@@ -1,0 +1,3 @@
+{
+	"shell_cmd": "cd $file_path && make all"
+}

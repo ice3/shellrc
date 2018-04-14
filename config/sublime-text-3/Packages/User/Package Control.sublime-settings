@@ -6,9 +6,23 @@
 	"installed_packages":
 	[
 		"Anaconda",
+		"BracketGuard",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ColorPicker",
 		"Djaneiro",
+		"Django",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Git blame",
 		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"Language - French - Français",
+		"LaTeXing",
+		"Markdown Preview",
+		"Minifier",
 		"Package Control",
-		"requirementstxt"
+		"requirementstxt",
+		"TrailingSpaces"
 	]
 }

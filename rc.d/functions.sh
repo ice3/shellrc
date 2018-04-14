@@ -44,7 +44,7 @@ serve() {
           ;;
   esac
 
-  
+
 }
 
 # know which package installed a file
@@ -66,4 +66,22 @@ france_inter(){
 # distributions of line in given files
 distrib_lines(){
   wc -l "$@" | grep -v wc | grep -v total | distribution -g -c=pl
+}
+
+show_virtual_env() {
+  if [ -n "$VIRTUAL_ENV" ]; then
+    echo "($(basename $VIRTUAL_ENV))"
+  fi
+}
+
+download_as_google(){
+  curl --user-agent "Googlebot/2.1 (+http://www.google.com/bot.html)" -v "$@"
+}
+
+compte_a_rebours(){
+	termdown ${1} && spd-say done && notify-send "fini"
+}
+
+function django_secret() {
+  python -c "import random,string;print(''.join([random.SystemRandom().choice(\"{}{}{}\".format(string.ascii_letters, string.digits, string.punctuation)) for i in range(63)]).replace('\\'','\\'\"\\'\"\\''))";
 }

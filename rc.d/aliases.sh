@@ -74,3 +74,5 @@ alias week='date +%V'
 # distribution plotting stuff
 alias distribution='python ~/.shellrc/utils/distribution/distribution.py'
 
+# unalias pip
+unalias pip

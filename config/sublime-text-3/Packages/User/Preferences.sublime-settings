@@ -1,6 +1,18 @@
 {
+	"added_words":
+	[
+		"py",
+		"Métaclasses"
+	],
+	"dictionary": "Packages/Language - French - Français/fr_FR (modern).dic",
+	"font_size": 15,
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"ignored_words":
+	[
+		"itérateur"
+	],
+	"trim_trailing_white_space_on_save": true
 }
