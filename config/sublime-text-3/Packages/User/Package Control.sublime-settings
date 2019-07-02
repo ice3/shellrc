@@ -2,10 +2,14 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"MarkdownPreview"
 	],
 	"installed_packages":
 	[
 		"Anaconda",
+		"Babel",
 		"BracketGuard",
 		"BracketHighlighter",
 		"Color Highlighter",
@@ -14,14 +18,21 @@
 		"Django",
 		"Emmet",
 		"Emmet Css Snippets",
+		"Firewatch Color Scheme",
 		"Git blame",
 		"GitGutter",
 		"HTML-CSS-JS Prettify",
 		"Language - French - Français",
+		"LaTeXBox",
 		"LaTeXing",
-		"Markdown Preview",
+		"LaTeXTools",
+		"MarkdownPreview",
 		"Minifier",
+		"nginx",
 		"Package Control",
+		"React IDE",
+		"React Native Autocomplete",
+		"ReactJS",
 		"requirementstxt",
 		"TrailingSpaces"
 	]

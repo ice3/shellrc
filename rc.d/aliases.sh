@@ -76,3 +76,6 @@ alias distribution='python ~/.shellrc/utils/distribution/distribution.py'
 
 # unalias pip
 unalias pip
+
+
+alias get_current_git_branch="git symbolic-ref --short HEAD"

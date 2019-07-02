@@ -5,9 +5,12 @@
 		"Métaclasses"
 	],
 	"dictionary": "Packages/Language - French - Français/fr_FR (modern).dic",
-	"font_size": 15,
+	"font_size": 12,
 	"ignored_packages":
 	[
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"MarkdownPreview",
 		"Vintage"
 	],
 	"ignored_words":

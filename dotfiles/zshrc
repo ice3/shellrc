@@ -13,3 +13,5 @@ if [ -d $HOME/.shellrc/rc.d ]; then
     source $file
   done
 fi
+
+export PATH=/home/mfalce/.local/bin:$PATH
